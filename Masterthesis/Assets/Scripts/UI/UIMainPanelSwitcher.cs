@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class UIMainPanelSwitcher : MonoBehaviour
 {
+    public UIInformationLoader UIInformationLoader;
+
     public Text UITopMenuText;
 
     public void SwitchMainPanelTo(string name)
@@ -27,4 +29,9 @@ public class UIMainPanelSwitcher : MonoBehaviour
         UITopMenuText.text = name;
     }
 
+    public void SwitchMainPanelToInformation(string godString)
+    {
+        SwitchMainPanelTo("Information");
+        UIInformationLoader.LoadInformation(godString);
+    }
 }
