@@ -26,6 +26,7 @@ public class UIInformationLoader : MonoBehaviour
                 Name.text = i.Name;
                 Information.text = i.Information;
                 Image.sprite = LoadImageFromResources("Images/Gods/" + i.ImageName);
+                Image.preserveAspect = true;
                 currentURL = i.URL;
                 return;
             }
