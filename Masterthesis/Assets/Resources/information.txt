@@ -1,50 +1,66 @@
 {
     "Items": [
 			{
-				"Name": "Athene",
-				"Information": "Athene oder Athena ist eine Göttin der griechischen Mythologie. Sie ist die Göttin der Weisheit, der Strategie und des Kampfes, der Kunst, des Handwerks und der Handarbeit sowie Schutzgöttin und Namensgeberin der griechischen Stadt Athen.",
-				"ImageName" : "Athena_1",
-				"URL" : "https://de.wikipedia.org/wiki/Athene"
-			},
-			{
-				"Name": "Artemis",
-				"Information": "Artemis ist in der griechischen Mythologie die Göttin der Jagd, des Waldes und des Mondes sowie die Hüterin der Frauen und Kinder.",
-				"ImageName" : "Artemis_1",
-				"URL" : "https://de.wikipedia.org/wiki/Artemis"
-			},
-			{
-				"Name": "Ares",
-				"Information": "Ares ist der griechischen Mythologie der Gott des schrecklichen Krieges, des Blutbades und Massakers. Er gehört zu den 12 olympischen Gottheiten, den Olympioi. Obwohl die Bedeutung nicht ganz gleich ist, wurde er später von den Römern dem eigenen Kriegsgott Mars gleichgestellt.",
-				"ImageName" : "Ares_1",
-				"URL" : "https://de.wikipedia.org/wiki/Ares"
-			}
-			,
-			{
 				"Name": "Apollon",
 				"Information": "Apollon ist in der griechischen und römischen Mythologie der Gott des Lichts, der Heilung, des Frühlings, der sittlichen Reinheit und Selbstdisziplin sowie der Weissagung und der Künste, insbesondere der Musik, der Dichtkunst und des Gesangs; außerdem war er Gott der Heilkunst und Gott der Bogenschützen.",
 				"ImageName" : "Apollo_1",
-				"URL" : "https://de.wikipedia.org/wiki/Apollon"
+				"URL" : "https://de.wikipedia.org/wiki/Apollon",
+				"TargetFloor" : "0",
+				"TargetVector" : "6.69,0,0.66"
 			}
 			,
 			{
 				"Name": "Aphrodite",
 				"Information": "Aphrodite ist in der griechischen Mythologie die Göttin der Liebe, der Schönheit und der sinnlichen Begierde und eine der kanonischen 12 olympischen Gottheiten. Sie wurde insbesondere als Schutzherrin der Sexualität und Fortpflanzung verehrt, die sowohl den Fortbestand der Natur als auch die Kontinuität der menschlichen Gemeinschaften gewärleistete.",
 				"ImageName" : "Aphrodite_1",
-				"URL" : "https://de.wikipedia.org/wiki/Aphrodite"
+				"URL" : "https://de.wikipedia.org/wiki/Aphrodite",
+				"TargetFloor" : "1",
+				"TargetVector" : "-4.46,2,0.87"
+			}
+			,
+			{
+				"Name": "Ares",
+				"Information": "Ares ist der griechischen Mythologie der Gott des schrecklichen Krieges, des Blutbades und Massakers. Er gehört zu den 12 olympischen Gottheiten, den Olympioi. Obwohl die Bedeutung nicht ganz gleich ist, wurde er später von den Römern dem eigenen Kriegsgott Mars gleichgestellt.",
+				"ImageName" : "Ares_1",
+				"URL" : "https://de.wikipedia.org/wiki/Ares",
+				"TargetFloor" : "2",
+				"TargetVector" : "2.89,4,0.65"
+			}
+			,
+			{
+				"Name": "Athene",
+				"Information": "Athene oder Athena ist eine Göttin der griechischen Mythologie. Sie ist die Göttin der Weisheit, der Strategie und des Kampfes, der Kunst, des Handwerks und der Handarbeit sowie Schutzgöttin und Namensgeberin der griechischen Stadt Athen.",
+				"ImageName" : "Athena_1",
+				"URL" : "https://de.wikipedia.org/wiki/Athene",
+				"TargetFloor" : "0",
+				"TargetVector" : "6.69,0,0.66"
+			}
+			,
+			{
+				"Name": "Artemis",
+				"Information": "Artemis ist in der griechischen Mythologie die Göttin der Jagd, des Waldes und des Mondes sowie die Hüterin der Frauen und Kinder.",
+				"ImageName" : "Artemis_1",
+				"URL" : "https://de.wikipedia.org/wiki/Artemis",
+				"TargetFloor" : "0",
+				"TargetVector" : "6.69,0,0.66"
 			}
 			,
 			{
 				"Name": "Demeter",
 				"Information": "asdf",
 				"ImageName" : "Demeter_1",
-				"URL" : ""
+				"URL" : "",
+				"TargetFloor" : "0",
+				"TargetVector" : "6.69,0,0.66"
 			}
 			,
 			{
 				"Name": "Herakles",
 				"Information": "asdf",
 				"ImageName" : "HeraklesFarnese_1",
-				"URL" : ""
+				"URL" : "",
+				"TargetFloor" : "0",
+				"TargetVector" : "6.69,0,0.66"
 			}
 	]
 }

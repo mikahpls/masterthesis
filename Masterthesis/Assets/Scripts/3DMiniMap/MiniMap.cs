@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class MiniMap : MonoBehaviour
 {
     public Material OpaqueMat, HiddenMat;
+    public Transform TargetPosition;
 
     void Start()
     {
@@ -32,6 +33,32 @@ public class MiniMap : MonoBehaviour
                 ChangeMaterial(r, OpaqueMat);
             }
         }
+    }
+
+    //function with int parameter for button onclick event..
+    public void HighlightFloor(int floor)
+    {
+        if (floor == 0)
+        {
+            HighlightFloor(Floor.E);
+        }
+        else if (floor == 1)
+        {
+            HighlightFloor(Floor.F1);
+        }
+        else if (floor == 2)
+        {
+            HighlightFloor(Floor.F2);
+        }
+        else
+        {
+            Debug.Log("Invalid floor number: " + floor + ". Try 0 ,1 or 2.");
+        }
+    }
+
+    public void SetTargetPosition(Vector3 pos)
+    {
+        TargetPosition.localPosition = pos;
     }
 
     private void ChangeMaterial(MeshRenderer r, Material m)

@@ -6,9 +6,14 @@ using UnityEngine.UI;
 
 public class UIInformationLoader : MonoBehaviour
 {
+    public MiniMap Minimap;
+    public UIMainPanelSwitcher UIMainPanelSwitcher;
+
     public Text Name, Information;
     public Image Image;
-    public string currentURL;
+    private string currentURL;
+    private int currentTargetFloor;
+    private Vector3 currentTargetVector;
 
     private static InformationText[] _informationTextArray;
 
@@ -28,6 +33,8 @@ public class UIInformationLoader : MonoBehaviour
                 Image.sprite = LoadImageFromResources("Images/Gods/" + i.ImageName);
                 Image.preserveAspect = true;
                 currentURL = i.URL;
+                currentTargetFloor = int.Parse(i.TargetFloor);
+                currentTargetVector = GetV3FromString(i.TargetVector);
                 return;
             }
         }
@@ -46,10 +53,27 @@ public class UIInformationLoader : MonoBehaviour
         return sprite;
     }
 
+    //format: "a,b,c"
+    private Vector3 GetV3FromString(string s)
+    {
+        var array = s.Split(',');
+        if(array.Length != 3) Debug.Log("Error parsing strings to vector3, wrong format?");
+        return new Vector3(float.Parse(array[0]), float.Parse(array[1]), float.Parse(array[2]));
+    }
+
     public void OpenBrowser()
     {
         Application.OpenURL(currentURL);
     }
+
+    public void OpenMiniMap()
+    {
+        //ugly
+        Minimap.HighlightFloor(currentTargetFloor);
+        Minimap.SetTargetPosition(currentTargetVector);
+        UIMainPanelSwitcher.SwitchMainPanelTo("Karte");
+    }
+
 }
 
 [Serializable]
@@ -59,4 +83,6 @@ public class InformationText
     public string Information;
     public string ImageName;
     public string URL;
+    public string TargetFloor;
+    public string TargetVector;
 }
