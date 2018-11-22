@@ -12,20 +12,20 @@ public class UIMainPanelSwitcher : MonoBehaviour
 
     public void SwitchMainPanelTo(string name)
     {
-        var list = transform.GetComponentsInChildren<Transform>(true).ToList().Where(t => t.tag == "MainPanel");
-        foreach (var t in list)
+        var transformList = transform.GetComponentsInChildren<Transform>(true).ToList().Where(t => t.tag == "MainPanel");
+        foreach (var t in transformList)
         {
             t.gameObject.SetActive(false);
         }
 
-        list = transform.GetComponentsInChildren<Transform>(true).ToList().Where(t => t.name == name);
-        if (list.Count() == 0 && list.Count() >= 2)
+        transformList = transform.GetComponentsInChildren<Transform>(true).ToList().Where(t => t.name == name);
+        if (transformList.Count() == 0 && transformList.Count() >= 2)
         {
             Debug.Log("No or multiple MainPanel-tagged Objects with name: " + name + " found.");
             return;
         }
 
-        list.First().gameObject.SetActive(true);
+        transformList.First().gameObject.SetActive(true);
         UITopMenuText.text = name;
     }
 
