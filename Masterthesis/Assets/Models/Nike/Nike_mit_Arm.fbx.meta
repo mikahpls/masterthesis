@@ -1,0 +1,261 @@
+fileFormatVersion: 2
+guid: 74d92ddff31ec364d975c595901975c8
+timeCreated: 1534704050
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Arm_2
+    100002: Arm_2.001
+    100004: Armature
+    100006: Armature.001
+    100008: Bone
+    100010: Bone 1
+    100012: Bone.001
+    100014: Bone.001 1
+    100016: Bone.002
+    100018: Bone.002 1
+    100020: Bone.003
+    100022: Bone.003 1
+    100024: Bone.004
+    100026: Bone.004 1
+    100028: Bone.005
+    100030: Bone.005 1
+    100032: Bone.006
+    100034: Bone.006 1
+    100036: Bone.007
+    100038: Bone.007 1
+    100040: Bone.008
+    100042: Bone.008 1
+    100044: Bone.008_end
+    100046: Bone.009
+    100048: Bone.009 1
+    100050: Bone.009_end
+    100052: Bone.010
+    100054: Bone.010 1
+    100056: Bone.010_end
+    100058: Bone.011
+    100060: Bone.011 1
+    100062: Bone.012
+    100064: Bone.012 1
+    100066: Bone.012_end
+    100068: Bone.013
+    100070: Bone.013 1
+    100072: Bone.013_end
+    100074: Bone.014
+    100076: Bone.014 1
+    100078: Bone.015
+    100080: Bone.015 1
+    100082: Bone.016
+    100084: Bone.016 1
+    100086: Bone.016_end
+    100088: Bone.016_end 1
+    100090: Bone.017
+    100092: Bone.017 1
+    100094: Bone.018
+    100096: Bone.018 1
+    100098: Bone.019
+    100100: Bone.019 1
+    100102: Bone.019_end
+    100104: Bone.020
+    100106: Bone.020 1
+    100108: Bone.020_end
+    100110: Bone.021
+    100112: Bone.021 1
+    100114: Bone.022
+    100116: Bone.022 1
+    100118: Bone.023
+    100120: Bone.023 1
+    100122: Bone.023_end
+    100124: Bone.024
+    100126: Bone.025
+    100128: Bone.026
+    100130: Bone.027
+    100132: Camera
+    100134: Cube
+    100136: Lamp
+    100138: mesh.001_mesh.002
+    100140: //RootNode
+    100142: Sun
+    100144: Sun.001
+    400000: Arm_2
+    400002: Arm_2.001
+    400004: Armature
+    400006: Armature.001
+    400008: Bone
+    400010: Bone 1
+    400012: Bone.001
+    400014: Bone.001 1
+    400016: Bone.002
+    400018: Bone.002 1
+    400020: Bone.003
+    400022: Bone.003 1
+    400024: Bone.004
+    400026: Bone.004 1
+    400028: Bone.005
+    400030: Bone.005 1
+    400032: Bone.006
+    400034: Bone.006 1
+    400036: Bone.007
+    400038: Bone.007 1
+    400040: Bone.008
+    400042: Bone.008 1
+    400044: Bone.008_end
+    400046: Bone.009
+    400048: Bone.009 1
+    400050: Bone.009_end
+    400052: Bone.010
+    400054: Bone.010 1
+    400056: Bone.010_end
+    400058: Bone.011
+    400060: Bone.011 1
+    400062: Bone.012
+    400064: Bone.012 1
+    400066: Bone.012_end
+    400068: Bone.013
+    400070: Bone.013 1
+    400072: Bone.013_end
+    400074: Bone.014
+    400076: Bone.014 1
+    400078: Bone.015
+    400080: Bone.015 1
+    400082: Bone.016
+    400084: Bone.016 1
+    400086: Bone.016_end
+    400088: Bone.016_end 1
+    400090: Bone.017
+    400092: Bone.017 1
+    400094: Bone.018
+    400096: Bone.018 1
+    400098: Bone.019
+    400100: Bone.019 1
+    400102: Bone.019_end
+    400104: Bone.020
+    400106: Bone.020 1
+    400108: Bone.020_end
+    400110: Bone.021
+    400112: Bone.021 1
+    400114: Bone.022
+    400116: Bone.022 1
+    400118: Bone.023
+    400120: Bone.023 1
+    400122: Bone.023_end
+    400124: Bone.024
+    400126: Bone.025
+    400128: Bone.026
+    400130: Bone.027
+    400132: Camera
+    400134: Cube
+    400136: Lamp
+    400138: mesh.001_mesh.002
+    400140: //RootNode
+    400142: Sun
+    400144: Sun.001
+    2000000: Camera
+    2100000: Mat.004
+    2100002: Untextured.001
+    2100004: Texture_8.001
+    2100006: Texture_3.001
+    2100008: Texture_2.001
+    2100010: Texture_1.001
+    2100012: Texture_0.001
+    2100014: Texture_7.001
+    2100016: Texture_6.001
+    2100018: Texture_5.001
+    2100020: Texture_4.001
+    2100022: Material
+    2100024: Mat.003
+    2300000: Cube
+    2300002: mesh.001_mesh.002
+    3300000: Cube
+    3300002: mesh.001_mesh.002
+    4300000: Arm_2.001
+    4300002: mesh.001_mesh.002
+    4300004: Cube
+    4300006: Arm_2
+    9500000: //RootNode
+    10800000: Lamp
+    10800002: Sun
+    10800004: Sun.001
+    13700000: Arm_2
+    13700002: Arm_2.001
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

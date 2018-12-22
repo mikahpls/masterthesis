@@ -8,6 +8,7 @@ public class MiniMap : MonoBehaviour
 {
     public Material OpaqueMat, HiddenMat;
     public Transform TargetPosition;
+    public List<Transform> IconsFloor, IconsF1, IconsF2;
 
     void Start()
     {
@@ -33,6 +34,8 @@ public class MiniMap : MonoBehaviour
                 ChangeMaterial(r, OpaqueMat);
             }
         }
+
+        ActivateFloorIcons(floor);
     }
 
     //function with int parameter for button onclick event..
@@ -66,6 +69,43 @@ public class MiniMap : MonoBehaviour
         var materials = r.materials;
         materials[0] = m;
         r.materials = materials;
+    }
+
+    private void ActivateFloorIcons(Floor floor)
+    {
+        foreach (var t in IconsFloor)
+        {
+            t.gameObject.SetActive(false);
+        }
+        foreach (var t in IconsF1)
+        {
+            t.gameObject.SetActive(false);
+        }
+        foreach (var t in IconsF2)
+        {
+            t.gameObject.SetActive(false);
+        }
+
+        if (floor == Floor.E)
+        {
+            foreach (var t in IconsFloor)
+            {
+                t.gameObject.SetActive(true);
+            }
+        }else if (floor == Floor.F1)
+        {
+            foreach (var t in IconsF1)
+            {
+                t.gameObject.SetActive(true);
+            }
+        }
+        else if (floor == Floor.F2)
+        {
+            foreach (var t in IconsF2)
+            {
+                t.gameObject.SetActive(true);
+            }
+        }
     }
 }
 
