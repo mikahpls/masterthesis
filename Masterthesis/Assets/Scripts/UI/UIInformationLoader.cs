@@ -47,7 +47,7 @@ public class UIInformationLoader : MonoBehaviour
 
         if (sprite == null)
         {
-            Debug.Log("No Image found in Resources at path: " + path + " found.");
+            Debug.Log("No Image found in Resources at path: " + path);
         }
 
         return sprite;

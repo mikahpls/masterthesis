@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+<Tracking>
+<ModelTarget name="Nike"/>
+</Tracking>
+
+<Assembly name="Nikes_assembly">
+<Part name="Nike" translation="0 0 0" rotation="AD: 0 0 1 0"/>
+<EntryPoint name="viewpoint_0000" translation="3.06891 20.1523 79.3347" rotation="AD: 0.9999998998326148 0.024490248077612454 -0.027474635952871754 83.4647">
+
+</EntryPoint>
+
+</Assembly>
+</QCARConfig>
