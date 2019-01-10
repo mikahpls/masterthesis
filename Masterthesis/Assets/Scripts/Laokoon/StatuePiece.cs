@@ -8,6 +8,7 @@ public class StatuePiece : MonoBehaviour
 
     public Vector3 LocalExplosionPosition;
     private Vector3 _localStartingPosition;
+    private StatuePieceInspector _spi;
 
     private float _explosionSpeed = 4;
 
@@ -54,6 +55,11 @@ public class StatuePiece : MonoBehaviour
             }
         }
     }
+
+    public void SetStatuePieceInspector(StatuePieceInspector SPI)
+    {
+        _spi = SPI;
+    }
 	
     void OnMouseOver()
     {
@@ -61,6 +67,7 @@ public class StatuePiece : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             Debug.Log("Klick mich nicht!");
+            _spi.ClonePiece(gameObject);
         }
     }
 

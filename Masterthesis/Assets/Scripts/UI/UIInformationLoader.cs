@@ -73,7 +73,6 @@ public class UIInformationLoader : MonoBehaviour
         Minimap.SetTargetPosition(currentTargetVector);
         UIMainPanelSwitcher.SwitchMainPanelTo("Karte");
     }
-
 }
 
 [Serializable]
