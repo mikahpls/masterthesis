@@ -66,7 +66,6 @@ public class StatuePiece : MonoBehaviour
         //OnClick
         if (Input.GetMouseButtonDown(0))
         {
-            Debug.Log("Klick mich nicht!");
             _spi.ClonePiece(gameObject);
         }
     }

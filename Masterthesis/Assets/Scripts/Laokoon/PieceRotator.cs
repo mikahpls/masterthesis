@@ -4,33 +4,34 @@ using UnityEngine;
 
 public class PieceRotator : MonoBehaviour
 {
-    private float _xRot, _dist, _lastDist;
-    private bool _touchedLastFrame;
+    private float rotSpeed = 150;
+    private float _dist, _lastDist;
+
+    void OnMouseDrag()
+    {
+        float rotX = Input.GetAxis("Mouse X") * rotSpeed * Mathf.Deg2Rad;
+        float rotY = Input.GetAxis("Mouse Y") * rotSpeed * Mathf.Deg2Rad;
+
+        transform.Rotate(Vector3.up, -rotX, Space.World);
+        transform.Rotate(Vector3.right, rotY, Space.World);
+    }
+
+    //void OnMouseOver()
+    //{
+    //    //OnClick
+    //    if (Input.GetMouseButtonDown(0))
+    //    {
+            
+    //    }
+    //}
 
     void Update()
     {
-        InputHandling();
-        RotateModel();
-    }
-
-    private void InputHandling()
-    {
-        //Debug.Log(Input.GetAxis("Mouse X"));
-        //if screen not touched
-        if (Input.touchCount == 0 || !Input.GetMouseButtonDown(0))
+        if (Input.touchCount == 0)
         {
-            _touchedLastFrame = false;
             _lastDist = _dist = 0;
         }
 
-        //if screen touched
-        if (Input.touchCount == 1 || Input.GetMouseButtonDown(0))
-        {
-            if (_touchedLastFrame) _xRot -= Input.GetAxis("Mouse X");
-            _touchedLastFrame = true;
-        }
-
-        //scaling
         if (Input.touchCount == 2)
         {
             var p1 = Input.touches[0].position;
@@ -44,13 +45,6 @@ public class PieceRotator : MonoBehaviour
             }
             _lastDist = _dist;
         }
-    }
-
-    private void RotateModel()
-    {
-        var curRot = transform.rotation;
-        var futRot = Quaternion.Euler(0, _xRot, 0);
-        transform.rotation = Quaternion.Lerp(curRot, futRot, Time.deltaTime * 10);
     }
 
     private void ScaleModel(float scaling)
