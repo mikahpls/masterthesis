@@ -20,11 +20,12 @@ public class ModelTargetCollection : MonoBehaviour
 
     public void ModelTargetFound(string name)
     {
-        
+        //Make sure the string name on the customtrackableeventhandler is the same as the transform name of the root ui element
+        UiMainPanelSwitcher.SwitchMainPanelTo(name);
     }
 
     public void ModelTargetLost(string name)
     {
-        
+        UiMainPanelSwitcher.SwitchMainPanelTo("Erweiterte Realität");
     }
 }
