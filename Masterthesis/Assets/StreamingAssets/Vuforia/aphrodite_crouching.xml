@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+<Tracking>
+<ModelTarget name="aphrodite_crouching"/>
+</Tracking>
+
+<Assembly name="aphrodite_crouchings_assembly">
+<Part name="aphrodite_crouching" translation="0 0 0" rotation="AD: 0 0 1 0"/>
+<EntryPoint name="viewpoint_0000" translation="8.24339 101.665 307.691" rotation="AD: 0.9999999992516464 0.0024802270235181187 -0.015791476467830922 197.85">
+
+</EntryPoint>
+
+</Assembly>
+</QCARConfig>
