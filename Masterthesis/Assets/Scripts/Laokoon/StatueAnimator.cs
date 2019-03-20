@@ -16,7 +16,7 @@ public class StatueAnimator : MonoBehaviour {
         piece.SetStatuePieceInspector(StatuePieceInspector);
     }
 
-    private void StartExplosionAnimation()
+    public void StartExplosionAnimation()
     {
         if (StatuePiecesReadyCounter == StatuePieces.Count)
         {

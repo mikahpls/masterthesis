@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+<Tracking>
+<ModelTarget name="laokoon_torso"/>
+</Tracking>
+
+<Assembly name="laokoon_torsos_assembly">
+<Part name="laokoon_torso" translation="0 0 0" rotation="AD: 0 0 1 0"/>
+<EntryPoint name="viewpoint_0000" translation="0.562862 1.34638 26.9604" rotation="AD: 0.9999928672348791 0.007624859388306636 -0.5702861851995523 181.331">
+
+</EntryPoint>
+
+</Assembly>
+</QCARConfig>
