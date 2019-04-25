@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class StatuePieceInspector : MonoBehaviour
 {
-    public GameObject SPIButton;
+    public GameObject SPIButton, SPIInfo;
     private GameObject _currentSelectedStatuePiece, _clonePiece;
 
     public void ClonePiece(GameObject obj)
@@ -19,6 +19,12 @@ public class StatuePieceInspector : MonoBehaviour
             _clonePiece.GetComponent<StatuePiece>().enabled = false;
             Destroy(_clonePiece.GetComponent<StatuePiece>());
             _clonePiece.AddComponent<PieceRotator>();
+
+            SPIInfo.SetActive(true);
+            var uiloader = SPIInfo.GetComponent<UIInformationLoader>();
+            var data = uiloader.GetDataAsStringArray(obj.name);
+            uiloader.Name.text = data[0];
+            uiloader.Information.text = data[1];
         }
     }
 
@@ -27,5 +33,6 @@ public class StatuePieceInspector : MonoBehaviour
         _currentSelectedStatuePiece = null;
         Destroy(_clonePiece);
         SPIButton.SetActive(false);
+        SPIInfo.SetActive(false);
     }
 }

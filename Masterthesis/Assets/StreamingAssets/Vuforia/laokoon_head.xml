@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+<Tracking>
+<ModelTarget name="laokoon_head"/>
+</Tracking>
+
+<Assembly name="laokoon_heads_assembly">
+<Part name="laokoon_head" translation="0 0 0" rotation="AD: 0 0 1 0"/>
+<EntryPoint name="viewpoint_0000" translation="0.486731 7.24254 10.0715" rotation="AD: 0.9991401150840383 0.058857912028210016 -0.9950632867620492 184.796">
+
+</EntryPoint>
+
+</Assembly>
+</QCARConfig>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+<Tracking>
+<ModelTarget name="laocoon_target"/>
+</Tracking>
+
+<Assembly name="laocoon_targets_assembly">
+<Part name="laocoon_target" translation="0 0 0" rotation="AD: 0 0 1 0"/>
+<EntryPoint name="viewpoint_0000" translation="-0.03607 0.0587489 0.216812" rotation="AD: 0.9999999999999731 -0.000540016513448027 -0.0005848221769189228 94.5621">
+
+</EntryPoint>
+
+</Assembly>
+</QCARConfig>

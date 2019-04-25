@@ -41,6 +41,31 @@ public class UIInformationLoader : MonoBehaviour
         Debug.Log("No god with name: " + name + " found in Resources/information.txt");
     }
 
+    public string[] GetDataAsStringArray(string name)
+    {
+        string[] array = new string[6];
+
+        TextAsset file = Resources.Load("information") as TextAsset;
+        string jsonString = file.ToString();
+        _informationTextArray = JsonHelper.FromJson<InformationText>(jsonString);
+
+        foreach (var i in _informationTextArray)
+        {
+            if (i.Name == name)
+            {
+                array[0] = i.Name;
+                array[1] = i.Information;
+                array[2] = i.ImageName;
+                array[3] = i.URL;
+                array[4] = i.TargetFloor;
+                array[5] = i.TargetVector;
+                return array;
+            }
+        }
+        Debug.Log("No data with name: " + name + " found in Resources/information.txt");
+        return null;
+    }
+
     private Sprite LoadImageFromResources(string path)
     {
         var sprite = Resources.Load<Sprite>(path);
