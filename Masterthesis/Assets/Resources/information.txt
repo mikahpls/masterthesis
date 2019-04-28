@@ -64,8 +64,62 @@
 			}
 			,
 			{
-				"Name": "laokoon_torso",
-				"Information": "test_data",
+				"Name": "Laokoon",
+				"Information": "Laokoon war in der griechischen und römischen Mythologie ein trojanischer Priester des Apollon oder des Poseidon. Laut griechischen Autoren war Laokoon der einzige Trojaner der den Trick des Trojanischen Pferdes der Griechen durchschaute.Er warf einen Speer auf das hölzerne Pferd, dieser prallte jedoch ab. Daraufhin erschienen zwei von Athene geschickte Schlangen, die Laokoon und seine beiden Söhne töteten.",
+				"ImageName" : "HeraklesFarnese_1",
+				"URL" : "",
+				"TargetFloor" : "0",
+				"TargetVector" : "6.69,0,0.66"
+			}
+			,
+			{
+				"Name": "Jüngerer Sohn",
+				"Information": "Der zweite große Block bildet den zweifelsohne kompliziertesten und in seiner Form auf überraschendsten Bestandteil des Statuen-Puzzels. Für das Zusammenfügen der verschiedenen Statuenteile ist er von zentraler Scharnierfunktion und veranschaulicht zugleich eindrücklich, wie anspruchsvoll das Zusammensetzen der Einzelteile angelegt war.",
+				"ImageName" : "HeraklesFarnese_1",
+				"URL" : "",
+				"TargetFloor" : "0",
+				"TargetVector" : "6.69,0,0.66"
+			}
+			,
+			{
+				"Name": "Älterer Sohn",
+				"Information": "Der dritte Block ist von hochrechteckiger Form und misst etwa 1,24m x 0,55m sowie 0,48m in der Tiefe. Die Figur des Sohnes steht auf einer merkwürdigen angeschrägten und von allen Seiten roh behauenen Plinthe hier wird eine sekundäre Beschädigung der einstigen Standfläche greifbar.",
+				"ImageName" : "HeraklesFarnese_1",
+				"URL" : "",
+				"TargetFloor" : "0",
+				"TargetVector" : "6.69,0,0.66"
+			}
+			,
+			{
+				"Name": "Altar",
+				"Information": "Ob dieser Block zudem antiken Bestand der Statuengruppe gehört oder erst nach ihrer Wiederauffindung 1506 als Ersatz für einen verlorenen Sitzblock gearbeitet wurde, ist in der Forschung umstritten. Beobachtungen vor allem zur technischen Herrichtung lassen uns die Zugehörigkeit des Blockes zu dem antiken Bestand annehmen.",
+				"ImageName" : "HeraklesFarnese_1",
+				"URL" : "",
+				"TargetFloor" : "0",
+				"TargetVector" : "6.69,0,0.66"
+			}
+			,
+			{
+				"Name": "Fuß des Laokoon",
+				"Information": "Dieses Teil bildet das Pendant zum Laokoon-Torso, bei dem das linke Bein nur bis zur oberen Hälfte des Unterschenkels erhalten ist. Der Fuß tritt lediglich mit drei Zehen auf dem Boden auf, in der Ferse ist er stark erhoben. Unter den Zehen befindet sich eine kleine, rechteckige Scheibe von ca. 2,5cm Höhe.",
+				"ImageName" : "HeraklesFarnese_1",
+				"URL" : "",
+				"TargetFloor" : "0",
+				"TargetVector" : "6.69,0,0.66"
+			}
+			,
+			{
+				"Name": "Rechter Arm des Sohnes",
+				"Information": "Dieses Teil ist durch einen Bruch entstanden und gehörte einst zu einem der anderen Einzelteile. Das Fragment misst etwa 0,28 x 0,23 x 0,27m. Erhalten ist ein rechter, im Ellbogen angewinkelter Arm ab der Höhe des mittleren Oberarmes, die Hand ist verloren.",
+				"ImageName" : "HeraklesFarnese_1",
+				"URL" : "",
+				"TargetFloor" : "0",
+				"TargetVector" : "6.69,0,0.66"
+			}
+			,
+			{
+				"Name": "Rechter Arm des Laokoon",
+				"Information": "Der wohl umstrittenste Teil der Statuengruppe. Bekannte Rekonstruktionen zeigen den Laokoon mit einem nach oben ausgestreckten andere mit einem stark angewinkelten Arm. Wie der Arm wirklich aussah ist schwer zu sagen, ganz zu schweigen von der Schlange die sich um den Arm schlingt.",
 				"ImageName" : "HeraklesFarnese_1",
 				"URL" : "",
 				"TargetFloor" : "0",

@@ -11,6 +11,7 @@ public class ModelTargetCollection : MonoBehaviour
     void Start()
     {
         if (UiMainPanelSwitcher == null) Debug.Log("UIMainPanelSwitcher in ModelTargetCollection is null.");
+        ModelTargetFound("Laokoon");
     }
 
     public void RegisterModelTarget(Transform t)
