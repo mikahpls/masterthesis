@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+<Tracking>
+<ModelTarget name="aphaia"/>
+</Tracking>
+
+<Assembly name="aphaias_assembly">
+<Part name="aphaia" translation="0 0 0" rotation="AD: 0 0 1 0"/>
+<EntryPoint name="viewpoint_0000" translation="-0.156441 5.24724 16.0673" rotation="AD: 0.9999999998187252 0.0007711152149356856 -0.02471202727474613 183.573">
+
+</EntryPoint>
+
+</Assembly>
+</QCARConfig>
