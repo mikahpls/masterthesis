@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Vuforia;
 
 public class StatuePieceInspector : MonoBehaviour
 {
     public GameObject SPIButton, SPIInfo;
     private GameObject _currentSelectedStatuePiece, _clonePiece;
+    public ModelTargetBehaviour ModelTarget;
 
     public void ClonePiece(GameObject obj)
     {

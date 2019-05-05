@@ -19,7 +19,7 @@ public class UIMainPanelSwitcher : MonoBehaviour
         }
 
         transformList = transform.GetComponentsInChildren<Transform>(true).ToList().Where(t => t.name == name);
-        if (transformList.Count() == 0 && transformList.Count() >= 2)
+        if (transformList.Count() == 0 || transformList.Count() >= 2)
         {
             Debug.Log("No or multiple MainPanel-tagged Objects with name: " + name + " found.");
             return;

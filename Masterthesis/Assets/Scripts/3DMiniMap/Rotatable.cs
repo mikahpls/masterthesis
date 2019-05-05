@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-
+//testing script, currently not in use
 public class Rotatable : MonoBehaviour
 {
     private AndroidLogger _logger;

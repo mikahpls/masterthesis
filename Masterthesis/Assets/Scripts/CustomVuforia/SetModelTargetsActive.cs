@@ -30,6 +30,16 @@ public class SetModelTargetsActive : MonoBehaviour {
             ModelTargetList[1].SetActive(true);
             nextTargetDSName = "aphaia";
         }
+        else if (i == 2)
+        {
+            ModelTargetList[2].SetActive(true);
+            nextTargetDSName = "aphrodite_crouching";
+        }
+        else if (i == 3)
+        {
+            ModelTargetList[3].SetActive(true);
+            nextTargetDSName = "Nike";
+        }
 
         //switch target model
         LoadNewTargetModel(nextTargetDSName);
