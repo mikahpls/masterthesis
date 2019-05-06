@@ -8,6 +8,7 @@ public class StatueAnimator : MonoBehaviour {
     public StatuePieceInspector StatuePieceInspector;
     //if every registered piece gives its okay for the next animation, the statueanimator can start the next animation
     public int StatuePiecesReadyCounter;
+    public bool AnimationReady = true;
 
     public void RegisterSelf(StatuePiece piece)
     {
@@ -18,9 +19,10 @@ public class StatueAnimator : MonoBehaviour {
 
     public void StartExplosionAnimation()
     {
-        if (StatuePiecesReadyCounter == StatuePieces.Count)
+        if (AnimationReady)
         {
             StatuePiecesReadyCounter = 0;
+            AnimationReady = false;
             foreach (var sp in StatuePieces)
             {
                 sp.StartExplosion();
@@ -28,11 +30,12 @@ public class StatueAnimator : MonoBehaviour {
         }
     }
 
-    void Update()
+    public void PieceReady()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        StatuePiecesReadyCounter++;
+        if(StatuePiecesReadyCounter == StatuePieces.Count)
         {
-            StartExplosionAnimation();
+            AnimationReady = true;
         }
     }
 }

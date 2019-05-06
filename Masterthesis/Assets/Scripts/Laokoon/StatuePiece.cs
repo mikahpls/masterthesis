@@ -39,19 +39,6 @@ public class StatuePiece : MonoBehaviour
             {
                 _exploded = true;
                 _animationRunning = false;
-                transform.parent.GetComponent<StatueAnimator>().StatuePiecesReadyCounter++;
-            }
-        }
-
-        //statue is already exploded and will fuse together again
-        else if (_animationRunning && _exploded)
-        {
-            transform.localPosition = Vector3.Lerp(transform.localPosition, _localStartingPosition, Time.deltaTime * _explosionSpeed);
-            if (Vector3.Distance(transform.localPosition, _localStartingPosition) < 0.01f)
-            {
-                _exploded = false;
-                _animationRunning = false;
-                transform.parent.GetComponent<StatueAnimator>().StatuePiecesReadyCounter++;
             }
         }
     }
@@ -64,9 +51,35 @@ public class StatuePiece : MonoBehaviour
     void OnMouseOver()
     {
         //OnClick
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && transform.parent.GetComponent<StatueAnimator>().AnimationReady)
         {
             _spi.ClonePiece(gameObject);
+        }
+    }
+
+    private void OnMouseDrag()
+    {
+        if (_exploded)
+        {
+
+            RaycastHit[] hits;
+            hits = Physics.RaycastAll(Camera.main.ScreenPointToRay(Input.mousePosition), 100.0F);
+
+            foreach(var hit in hits)
+            {
+                if(hit.transform.tag == "PuzzleCollider")
+                {
+                    transform.position = hit.point;
+                }
+            }
+
+            Debug.Log(Vector3.Distance(transform.localPosition, _localStartingPosition));
+            if (Vector3.Distance(transform.localPosition, _localStartingPosition) < 7)
+            {
+                transform.localPosition = _localStartingPosition;
+                _exploded = false;
+                transform.parent.GetComponent<StatueAnimator>().PieceReady();
+            }
         }
     }
 
