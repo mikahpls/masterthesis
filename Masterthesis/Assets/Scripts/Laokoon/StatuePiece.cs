@@ -5,10 +5,10 @@ using UnityEngine;
 public class StatuePiece : MonoBehaviour
 {
     //Statue Pieces register themselves on SceneLoad at the StatueAnimator, which acts as a central animation invoker.
-
     public Vector3 LocalExplosionPosition;
     private Vector3 _localStartingPosition;
     private StatuePieceInspector _spi;
+    public float PuzzleTolerance;
 
     private float _explosionSpeed = 4;
 
@@ -43,6 +43,11 @@ public class StatuePiece : MonoBehaviour
         }
     }
 
+    public void SetRandomExplosionPosition(Vector3 pos)
+    {
+        LocalExplosionPosition = pos;
+    }
+
     public void SetStatuePieceInspector(StatuePieceInspector SPI)
     {
         _spi = SPI;
@@ -74,7 +79,7 @@ public class StatuePiece : MonoBehaviour
             }
 
             Debug.Log(Vector3.Distance(transform.localPosition, _localStartingPosition));
-            if (Vector3.Distance(transform.localPosition, _localStartingPosition) < 7)
+            if (Vector3.Distance(transform.localPosition, _localStartingPosition) < PuzzleTolerance)
             {
                 transform.localPosition = _localStartingPosition;
                 _exploded = false;

@@ -9,6 +9,7 @@ public class StatueAnimator : MonoBehaviour {
     //if every registered piece gives its okay for the next animation, the statueanimator can start the next animation
     public int StatuePiecesReadyCounter;
     public bool AnimationReady = true;
+    public List<Vector3> ExplosionPointList = new List<Vector3>();
 
     public void RegisterSelf(StatuePiece piece)
     {
@@ -23,9 +24,13 @@ public class StatueAnimator : MonoBehaviour {
         {
             StatuePiecesReadyCounter = 0;
             AnimationReady = false;
-            foreach (var sp in StatuePieces)
+
+            int rnd = Random.Range(0, 100);
+
+            for(int i = 0; i < StatuePieces.Count; i++)
             {
-                sp.StartExplosion();
+                StatuePieces[i].SetRandomExplosionPosition(ExplosionPointList[(rnd + i) % StatuePieces.Count]);
+                StatuePieces[i].StartExplosion();
             }
         }
     }
