@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+<Tracking>
+<ModelTarget name="AthenaParthenos_madrid_Cs_P_S_LT"/>
+</Tracking>
+
+<Assembly name="AthenaParthenos_madrid_Cs_P_S_LTs_assembly">
+<Part name="AthenaParthenos_madrid_Cs_P_S_LT" translation="0 0 0" rotation="AD: 0 0 0"/>
+<EntryPoint name="viewpoint_0000" translation="-0.000271379 0.0301525 0.118929" rotation="AD: 0.9051116417229732 -0.43663087764995673 4.317737426467489 182.366">
+
+</EntryPoint>
+
+</Assembly>
+</QCARConfig>

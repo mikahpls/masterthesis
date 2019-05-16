@@ -34,6 +34,12 @@ public class ModelTargetCollection : MonoBehaviour
             return;
         }
 
+        //special rule as well..
+        if(name == "Aphaia")
+        {
+            return;
+        }
+
         UiMainPanelSwitcher.SwitchMainPanelTo("Erweiterte Realität");
     }
 }

@@ -29,6 +29,10 @@ public class SetModelTargetsActive : MonoBehaviour {
         {
             ModelTargetList[1].SetActive(true);
             nextTargetDSName = "aphaia";
+            if(transform.parent != null)
+            {
+                transform.parent.GetComponent<UIMainPanelSwitcher>().SwitchMainPanelTo("Aphaia");
+            }
         }
         else if (i == 2)
         {
@@ -39,6 +43,11 @@ public class SetModelTargetsActive : MonoBehaviour {
         {
             ModelTargetList[3].SetActive(true);
             nextTargetDSName = "Nike";
+        }
+        else if(i == 4)
+        {
+            ModelTargetList[4].SetActive(true);
+            nextTargetDSName = "AthenaParthenos_madrid_Cs_P_S_LT";
         }
 
         //switch target model

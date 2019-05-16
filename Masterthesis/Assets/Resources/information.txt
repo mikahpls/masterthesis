@@ -28,12 +28,21 @@
 			}
 			,
 			{
+				"Name": "Nike",
+				"Information": "Nike ist in der griechischen Mythologie die Göttin des Sieges. Ihr römisches Equivalent ist Victoria.",
+				"ImageName" : "Nike_1",
+				"URL" : "https://en.wikipedia.org/wiki/Nike_(mythology)",
+				"TargetFloor" : "0",
+				"TargetVector" : "-6.7,0,0.34"
+			}
+			,
+			{
 				"Name": "Athene",
 				"Information": "Athene oder Athena ist eine Göttin der griechischen Mythologie. Sie ist die Göttin der Weisheit, der Strategie und des Kampfes, der Kunst, des Handwerks und der Handarbeit sowie Schutzgöttin und Namensgeberin der griechischen Stadt Athen.",
 				"ImageName" : "Athena_1",
 				"URL" : "https://de.wikipedia.org/wiki/Athene",
 				"TargetFloor" : "0",
-				"TargetVector" : "6.69,0,0.66"
+				"TargetVector" : "7.48,0,-2.49"
 			}
 			,
 			{
@@ -69,7 +78,7 @@
 				"ImageName" : "HeraklesFarnese_1",
 				"URL" : "",
 				"TargetFloor" : "0",
-				"TargetVector" : "6.69,0,0.66"
+				"TargetVector" : "-7.44,0,-5.16"
 			}
 			,
 			{
