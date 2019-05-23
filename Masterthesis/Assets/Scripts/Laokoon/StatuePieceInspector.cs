@@ -8,6 +8,7 @@ public class StatuePieceInspector : MonoBehaviour
     public GameObject SPIButton, SPIInfo;
     private GameObject _currentSelectedStatuePiece, _clonePiece;
     public ModelTargetBehaviour ModelTarget;
+    public UITransformOnOff laokoonOnOff;
 
     public void ClonePiece(GameObject obj)
     {
@@ -33,6 +34,7 @@ public class StatuePieceInspector : MonoBehaviour
     public void DeselectStatuePiece()
     {
         _currentSelectedStatuePiece = null;
+        laokoonOnOff.TransformOnOff();
         Destroy(_clonePiece);
         SPIButton.SetActive(false);
         SPIInfo.SetActive(false);

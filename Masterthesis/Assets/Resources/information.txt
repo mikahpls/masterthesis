@@ -1,4 +1,4 @@
-{
+﻿{
     "Items": [
 			{
 				"Name": "Apollon",
@@ -83,7 +83,7 @@
 			,
 			{
 				"Name": "Jüngerer Sohn",
-				"Information": "Der zweite große Block bildet den zweifelsohne kompliziertesten und in seiner Form auf überraschendsten Bestandteil des Statuen-Puzzels. Für das Zusammenfügen der verschiedenen Statuenteile ist er von zentraler Scharnierfunktion und veranschaulicht zugleich eindrücklich, wie anspruchsvoll das Zusammensetzen der Einzelteile angelegt war.",
+				"Information": "Der zweite große Block bildet den zweifelsohne kompliziertesten und in seiner Form auf überraschendsten Bestandteil des Statuen-Puzzels. Für das Zusammenfügen der verschiedenen Statuenteile ist er von zentraler Scharnierfunktion und veranschaulicht zugleich eindrücklich, wie anspruchsvoll das Zusammensetzen der Einzelteile angelegt war. Eine nicht unwesentliche Absplitterung unten links macht genaugenommen 2 Teile daraus.",
 				"ImageName" : "HeraklesFarnese_1",
 				"URL" : "",
 				"TargetFloor" : "0",
@@ -101,7 +101,7 @@
 			,
 			{
 				"Name": "Altar",
-				"Information": "Ob dieser Block zudem antiken Bestand der Statuengruppe gehört oder erst nach ihrer Wiederauffindung 1506 als Ersatz für einen verlorenen Sitzblock gearbeitet wurde, ist in der Forschung umstritten. Beobachtungen vor allem zur technischen Herrichtung lassen uns die Zugehörigkeit des Blockes zu dem antiken Bestand annehmen.",
+				"Information": "Ob dieser Block zudem antiken Bestand der Statuengruppe gehört oder erst nach ihrer Wiederauffindung 1506 als Ersatz für einen verlorenen Sitzblock gearbeitet wurde, ist in der Forschung umstritten. Beobachtungen vor allem zur technischen Herrichtung lassen uns die Zugehörigkeit des Blockes zu dem antiken Bestand annehmen. Er besteht aus 2 Bruchstücken.",
 				"ImageName" : "HeraklesFarnese_1",
 				"URL" : "",
 				"TargetFloor" : "0",

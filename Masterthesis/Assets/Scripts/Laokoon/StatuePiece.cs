@@ -59,6 +59,7 @@ public class StatuePiece : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && transform.parent.GetComponent<StatueAnimator>().AnimationReady)
         {
             _spi.ClonePiece(gameObject);
+            transform.parent.GetComponent<UITransformOnOff>().TransformOnOff();
         }
     }
 
